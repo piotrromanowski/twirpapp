@@ -1,7 +1,6 @@
 # TwirpApp
 
-Twirp app starter
-
+A Go app starter using twirp rpc framework.
 
 ## Instructions
 ```

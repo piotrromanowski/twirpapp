@@ -3,14 +3,14 @@ syntax = "proto3";
 package twirpapp.rpc;
 option go_package = "/rpc";
 
-message LongUrl {
-  string url = 1;
+message Person {
+  string name = 1;
 }
 
-message ShortUrl {
-  string url = 1;
+message Greeting {
+  string phrase = 1;
 }
 
-service UrlShortner {
-  rpc Shorten(LongUrl) returns (ShortUrl);
+service Greeter {
+  rpc Greet(Person) returns (Greeting);
 }
